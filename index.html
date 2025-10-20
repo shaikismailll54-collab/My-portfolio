@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHAIK ISMAIL - 3D Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Particle Background -->
+    <div id="particles-container"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2 class="logo-text">SHAIK ISMAIL</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#internships" class="nav-link">Experience</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="typewriter-text">Hi, I'm <span class="gradient-text">Shaik Ismail</span></h1>
+                    <p class="hero-subtitle">AI & Data Science | Full-Stack Developer | UI/UX Designer</p>
+                    <div class="hero-buttons">
+                        <button class="btn-primary" onclick="viewResume()">View Resume</button>
+                        <button class="btn-secondary" onclick="downloadResume()">Download Resume</button>
+                    </div>
+                </div>
+                <div class="hero-avatar">
+                    <div class="avatar-container">
+                        <img src="profile-photo.jpg" alt="Shaik Ismail" class="avatar-image">
+                        <div class="avatar-glow"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="floating-elements">
+                <div class="floating-shape shape-1"></div>
+                <div class="floating-shape shape-2"></div>
+                <div class="floating-shape shape-3"></div>
+                <div class="rotating-globe">
+                    <div class="globe-sphere">
+                        <div class="globe-lines"></div>
+                        <div class="globe-lines globe-lines-2"></div>
+                        <div class="globe-lines globe-lines-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="glass-card">
+                        <h3>Career Objective</h3>
+                        <p>Skilled AI and Data Science professional with hands-on experience in building machine learning models and analyzing complex datasets to drive business insights. Proficient in Python, SQL, and key libraries like Pandas, Scikit-learn, and TensorFlow. Strong foundation in statistics, data preprocessing, and algorithm development. Experienced in creating end-to-end data pipelines and deploying models in production environments. Adept at visualizing data using Matplotlib, Seaborn, and Power BI to support data-driven decisions. Collaborative team player with a problem-solving mindset and a passion for leveraging data to create impactful solutions.</p>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-container">
+                        <img src="profile-photo.jpg" alt="Shaik Ismail" class="about-img">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-timeline">
+                <div class="education-item glass-card">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>Bachelor of Technology | Artificial Intelligence and Data Science</h3>
+                        <div class="education-institution">CMS College of Engineering and Technology</div>
+                        <div class="education-duration">2022 - 2026</div>
+                        <div class="education-cgpa">CGPA up to 6th Semester: 7.40%</div>
+                    </div>
+                </div>
+                <div class="education-item glass-card">
+                    <div class="education-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>Intermediate | MPC</h3>
+                        <div class="education-institution">Pb Siddhartha College of Arts & Science</div>
+                        <div class="education-duration">2020 - 2022</div>
+                    </div>
+                </div>
+                <div class="education-item glass-card">
+                    <div class="education-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>SSC</h3>
+                        <div class="education-institution">A.K.T.P.M.C.H High School</div>
+                        <div class="education-duration">2019 - 2020</div>
+                        <div class="education-cgpa">Percentage: 78.00%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-globe">
+                <div class="rotating-globe skills-globe-1">
+                    <div class="globe-sphere">
+                        <div class="globe-lines"></div>
+                        <div class="globe-lines globe-lines-2"></div>
+                        <div class="globe-lines globe-lines-3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card glass-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span class="tag">C</span>
+                        <span class="tag">Java</span>
+                        <span class="tag">Python</span>
+                    </div>
+                </div>
+                <div class="skill-card glass-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Tools & IDEs</h3>
+                    <div class="skill-tags">
+                        <span class="tag">VS Code</span>
+                        <span class="tag">Jupyter Notebook</span>
+                        <span class="tag">Microsoft Office</span>
+                    </div>
+                </div>
+                <div class="skill-card glass-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Databases</h3>
+                    <div class="skill-tags">
+                        <span class="tag">SQL</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">NoSQL</span>
+                    </div>
+                </div>
+                <div class="skill-card glass-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI & ML</h3>
+                    <div class="skill-tags">
+                        <span class="tag">TensorFlow</span>
+                        <span class="tag">Scikit-learn</span>
+                        <span class="tag">Pandas</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-globe">
+                <div class="rotating-globe projects-globe-1">
+                    <div class="globe-sphere">
+                        <div class="globe-lines"></div>
+                        <div class="globe-lines globe-lines-2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card glass-card">
+                    <div class="project-image">
+                        <img src="ai-chatbot-project.jpg" alt="AI-Powered Customer Support Chatbot">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <!-- Clean design - no icons -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AI-Powered Customer Support Chatbot</h3>
+                        <p>Created an AI-based chatbot capable of handling real-time customer queries using Python, NLTK, and Dialogflow. Applied natural language processing to understand user intent and trained the system on custom data to improve accuracy and contextual relevance in conversations.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">NLTK</span>
+                            <span class="tech-tag">Dialogflow</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card glass-card">
+                    <div class="project-image">
+                        <img src="fake-news-detection-project.jpg" alt="Fake News Detection System">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <!-- Clean design - no icons -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Fake News Detection System</h3>
+                        <p>Built a text classification model to identify fake news with 95% accuracy. Utilized TF-IDF for feature engineering and implemented a lightweight linear classifier suited for high-dimensional data. Conducted thorough evaluation using standard classification metrics to ensure model reliability.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TF-IDF</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internships Section -->
+    <section id="internships" class="internships">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item glass-card">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Web Full-Stack Development</h3>
+                            <span class="timeline-date">August 2024</span>
+                        </div>
+                        <div class="timeline-company">BIST Technologies Private Limited, Vijayawada</div>
+                        <p>Completed an intensive internship focused on Full-Stack Web Development, aligned with industry standards and real-world application needs. Gained hands-on experience building dynamic and responsive web applications using core technologies such as HTML, CSS, JavaScript, and React.js for the front-end.</p>
+                        <div class="timeline-duration">60 Days</div>
+                    </div>
+                </div>
+                <div class="timeline-item glass-card">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Machine Learning</h3>
+                            <span class="timeline-date">November 2024</span>
+                        </div>
+                        <div class="timeline-company">BIST Technologies Private Limited, Vijayawada</div>
+                        <p>Developed proficiency in key machine learning libraries and tools including Python, NumPy, Pandas, Matplotlib, Seaborn, and Scikit-learn. Learned to preprocess and analyze both structured and unstructured datasets to extract actionable insights.</p>
+                        <div class="timeline-duration">30 Days</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="cert-grid">
+                <a href="ui-ux-design-certificate.pdf" target="_blank" class="cert-card glass-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>UI & UX Design</h3>
+                    <div class="cert-provider">IBM Skills Build</div>
+                    <p>Completed an online certification program focused on the principles and practices of User Interface (UI) and User Experience (UX) design.</p>
+                    <div class="cert-link">
+                        <i class="fas fa-download"></i> View Certificate
+                    </div>
+                </a>
+                <a href="ai-foundation-oracle-certificate.pdf" target="_blank" class="cert-card glass-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI Foundation Associate Oracle</h3>
+                    <div class="cert-provider">Oracle</div>
+                    <p>Completed an industry-recognized online certification focused on the foundational concepts of Artificial Intelligence and Machine Learning.</p>
+                    <div class="cert-link">
+                        <i class="fas fa-download"></i> View Certificate
+                    </div>
+                </a>
+                <a href="mongodb-certificate.pdf" target="_blank" class="cert-card glass-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Introduction to MongoDB</h3>
+                    <div class="cert-provider">MongoDB University</div>
+                    <p>Completed an introductory course covering the fundamentals of MongoDB, a NoSQL database system. Gained hands-on experience with data modeling.</p>
+                    <div class="cert-link">
+                        <i class="fas fa-download"></i> View Certificate
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info-centered">
+                    <a href="tel:+917842348870" class="contact-item glass-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>+91 7842348870</p>
+                        </div>
+                    </a>
+                    <a href="mailto:shaikismailll54@gmail.com" class="contact-item glass-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>shaikismailll54@gmail.com</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/shaikismail" target="_blank" class="contact-item glass-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>GitHub</h3>
+                            <p>github.com/shaikismail</p>
+                        </div>
+                    </a>
+                    <a href="https://linkedin.com/in/SHAIKISMAIL334" target="_blank" class="contact-item glass-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>LinkedIn</h3>
+                            <p>linkedin.com/in/SHAIKISMAIL334</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 SHAIK ISMAIL. All rights reserved.</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/SHAIKISMAIL334" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/shaikismail" class="social-link"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
